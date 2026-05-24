@@ -212,10 +212,6 @@ class ALTestAgent:
             messages, self.llm_with_tools, self.tools_by_name, show_context
         )
 
-        last = messages[-1]
-        if hasattr(last, "tool_calls") and not last.tool_calls and hasattr(last, "content"):
-            return last.content
-
         messages.append(HumanMessage(
             content="Now generate the complete AL test codeunit. Output ONLY AL code."
         ))
