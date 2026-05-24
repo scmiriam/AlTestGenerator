@@ -5,11 +5,11 @@ import shutil
 from pathlib import Path
 from collections import Counter
 
-from langchain.schema import Document
+from langchain_core.documents import Document
 from langchain_community.vectorstores import Chroma
 from langchain_community.retrievers import BM25Retriever
 from langchain_huggingface import HuggingFaceEmbeddings
-from langchain.retrievers import EnsembleRetriever
+from langchain_classic.retrievers.ensemble import EnsembleRetriever
 from tqdm import tqdm
 
 # ── Configuración ─────────────────────────────────────────────────────

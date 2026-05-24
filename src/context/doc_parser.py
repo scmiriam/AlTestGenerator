@@ -1,5 +1,5 @@
 """
-parser.py — Parsea el libro de testing AL (Markdown) en secciones tipadas.
+doc_parser.py — Parsea el libro de testing AL (Markdown) en secciones tipadas.
 """
 import re
 from dataclasses import dataclass, field

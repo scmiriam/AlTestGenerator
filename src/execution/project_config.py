@@ -74,3 +74,12 @@ class ProjectConfig:
             except ValueError:
                 continue
         return False
+
+    def get_id_ranges(self) -> list:
+        """Devuelve los idRanges definidos en app.json, o lista vacía si no existe."""
+        import json
+        app_json = self.project_root / "app.json"
+        if app_json.exists():
+            data = json.loads(app_json.read_text(encoding="utf-8"))
+            return data.get("idRanges", [])
+        return []

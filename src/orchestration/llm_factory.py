@@ -1,6 +1,6 @@
 """
 llm_factory.py — Instancia ChatModels de LangChain para distintos proveedores LLM.
-Proveedores soportados: openai | claude | ollama
+Proveedores soportados: openai | claude 
 """
 import os
 
@@ -33,13 +33,13 @@ def create_llm(provider: str, model=None, temperature: float = 0.2):
     if provider == "claude":
         _require_key("ANTHROPIC_API_KEY", "Anthropic/Claude")
         from langchain_anthropic import ChatAnthropic
-        return ChatAnthropic(model=model or "claude-sonnet-4-6",
-                             temperature=temperature, max_tokens=8192)
-
-    if provider == "ollama":
-        from langchain_ollama import ChatOllama
-        return ChatOllama(model=model or "llama3", temperature=temperature)
-
+        return ChatAnthropic(
+            model=model or "claude-sonnet-4-6",
+            temperature=temperature,
+            max_tokens=16000,
+            default_headers={"anthropic-beta": "prompt-caching-2024-07-31"},
+        )
+    
     raise ValueError(
         f"Proveedor desconocido: {provider!r}. "
         "Opciones válidas: openai, claude, ollama."

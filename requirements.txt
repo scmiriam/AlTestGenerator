@@ -12,7 +12,7 @@ langchain-ollama
 # ── Vector store & embeddings ─────────────────────────────────────────
 chromadb
 sentence-transformers
-transformers
+transformers>=4.36,<5.0
 
 # ── Retrieval híbrido ─────────────────────────────────────────────────
 rank-bm25
@@ -22,12 +22,17 @@ tqdm
 numpy
 matplotlib
 python-dotenv
+PyYAML
 
 # ── Procesamiento PDF / OCR ───────────────────────────────────────────
 PyMuPDF
 pytesseract
 pdf2image
 Pillow
+
+# ── VS Code Extension API server ─────────────────────────────────────
+fastapi
+uvicorn[standard]
 
 # ── Jupyter ───────────────────────────────────────────────────────────
 jupyter

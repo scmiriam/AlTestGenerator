@@ -1,0 +1,27 @@
+# ── Vectorstore (generado localmente, no se comparte) ─────────────────
+chroma_al_testing/
+
+# ── Entorno y secretos ────────────────────────────────────────────────
+.env
+.venv/
+venv/
+env/
+
+# ── Python ────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# ── Business Central ──────────────────────────────────────────────────
+.alpackages/
+.altestrunner/
+
+# ── Jupyter ───────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── SO ────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db

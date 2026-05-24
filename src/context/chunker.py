@@ -2,8 +2,8 @@
 chunker.py — Convierte secciones del libro en Documents de LangChain.
 Respeta la sintaxis AL (procedure, begin, end) para no cortar código a medias.
 """
-from langchain.schema import Document
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_core.documents import Document
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 # ── Configuración ─────────────────────────────────────────────────────
 

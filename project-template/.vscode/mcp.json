@@ -1,0 +1,12 @@
+{
+  "servers": {
+    "al-test-generator": {
+      "type": "stdio",
+      "command": "C:\\ruta\\a\\TFGLaberit\\.venv\\Scripts\\python.exe",
+      "args": ["C:\\ruta\\a\\TFGLaberit\\mcp_server.py"],
+      "env": {
+        "PROJECT_ROOT": "${workspaceFolder}"
+      }
+    }
+  }
+}
