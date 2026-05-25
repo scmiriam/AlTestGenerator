@@ -48,14 +48,16 @@ python -m venv .venv
 # Instalar requerimientos y preparar entorno
 pip install -r requirements.txt
 cp .env.example .env
+```
 
 Tras configurar el servidor MCP en VS Code, construir el vectorstore desde el chat de Copilot:
 
-```
+```bash
 @al-test-generator rebuild_vectorstore
 ```
 
 ## Herramientas MCP disponibles
+```
 
 | Herramienta | Descripción |
 |---|---|
@@ -65,6 +67,7 @@ Tras configurar el servidor MCP en VS Code, construir el vectorstore desde el ch
 | `search_al_knowledge` | Busca en la base de conocimiento sin generar código |
 | `refresh_examples` | Reindexar los ejemplos de `Data/TestExamples/` |
 | `rebuild_vectorstore` | Reconstruye toda la base de conocimiento desde cero |
+``` 
 
 ## Requisitos
 
