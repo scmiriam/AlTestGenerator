@@ -56,18 +56,19 @@ Tras configurar el servidor MCP en VS Code, construir el vectorstore desde el ch
 @al-test-generator rebuild_vectorstore
 ```
 
-## Herramientas MCP disponibles
-```
+### Herramientas MCP disponibles
 
-| Herramienta | Descripción |
-|---|---|
-| `generate_al_test` | Genera un codeunit de tests a partir de una descripción |
-| `generate_al_test_from_recording` | Genera tests desde una grabación YAML de BC |
-| `fix_al_test` | Corrige un test que falla en runtime en Business Central |
-| `search_al_knowledge` | Busca en la base de conocimiento sin generar código |
-| `refresh_examples` | Reindexar los ejemplos de `Data/TestExamples/` |
-| `rebuild_vectorstore` | Reconstruye toda la base de conocimiento desde cero |
-``` 
+* **`generate_al_test`** Genera un codeunit de tests a partir de una descripción.
+  
+* **`generate_al_test_from_recording`** Genera tests desde una grabación YAML de Business Central.
+  
+* **`fix_al_test`** Corrige un test que falla en runtime en Business Central.
+  
+* **`search_al_knowledge`** Busca en la base de conocimiento sin generar código.
+  
+* **`refresh_examples`** Reindexar los ejemplos de `Data/TestExamples/`.
+  
+* **`rebuild_vectorstore`** Reconstruye toda la base de conocimiento desde cero.
 
 ## Requisitos
 
