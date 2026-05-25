@@ -31,7 +31,7 @@ TFGLaberit/
 
 ## Inicio rápido
 
-Consulta [SETUP.md](SETUP.md) o el [Manual de usuario.pdf](Manual de usuario.pdf) para las instrucciones completas de instalación y configuración del servidor MCP en VS Code.
+Consulta [SETUP.md](SETUP.md) o Manual de usuario.pdf para las instrucciones completas de instalación y configuración del servidor MCP en VS Code.
 
 Resumen:
 
